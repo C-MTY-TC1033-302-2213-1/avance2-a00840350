@@ -20,7 +20,7 @@ class Episodio{
 private:
 string titulo;
 int temporada;
-double calificacion;
+int calificacion;
 
 public:
 // Constructores
