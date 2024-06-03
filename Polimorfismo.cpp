@@ -211,7 +211,7 @@ void Polimorfismo::reportePeliculas(){
     // fuera del for - desplegar los totales
     // Verificar si hubo peliculas
     if(contPeliculas > 0){
-        cout << "Peliculas = " << contPeliculas << endl;
+        cout << "Total Peliculas = " << contPeliculas << endl;
     }
     
     // Si no hubo peliculas, desplegar que no hubo
@@ -240,11 +240,11 @@ void Polimorfismo::reporteSeries(){
     // fuera del for - desplegar los totales
     // Verificar si hubo peliculas
     if(contSeries > 0){
-        cout << "Series = " << contSeries << endl;
+        cout << "Total Series = " << contSeries << endl;
     }
     
     // Si no hubo series, desplegar que no hubo
     else{
-        cout << "No Series" << endl;
+        cout << "No series" << endl;
     }
 }
