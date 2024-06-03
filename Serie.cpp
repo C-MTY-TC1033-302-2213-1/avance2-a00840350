@@ -75,7 +75,13 @@ else{
 
 string Serie::str(){
     // Por mientras
-    return Video::str();
+    string str = Video::str() + ' ' + to_string(cantidad) + '\n';
+    for (int index = 0; index < cantidad; index++)
+    {
+        str += episodios[index].str() + '\n';
+    }
+    
+    return str;
 }
 
 // Validar un episodio solo si existe espacio
@@ -90,5 +96,5 @@ void Serie::calculaDuracion(){
 for(int index = 0; index < cantidad; index++){
     acum1 += episodios[index].getTemporada();
 }
-cout <<  acum1 << endl;
+cout << "Duracion = " <<acum1 << endl;
 }

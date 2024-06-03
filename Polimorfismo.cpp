@@ -108,6 +108,7 @@ void Polimorfismo::leerArchivo(string _nombre){
         promedio = arrPtrSeries[index]->calculaPromedio(); // calcula la calificacion de la Serie
         arrPtrSeries[index]->setCalificacion(promedio); // cambia la calificacion de la Serie
         // añade el calcular la duración de la serie
+        cout << arrPtrSeries[index]->getDuracion() << endl;
         arrPtrVideos[cantidad++] = arrPtrSeries[index];
     }
 
