@@ -25,17 +25,17 @@ double calificacion;
 public:
 // Constructores
 Episodio();
-Episodio(string _titulo, int _temporada, double _calificacion);
+Episodio(string _titulo, int _temporada, int _calificacion);
 
 // Metodos modificadores - setters
 void setTitulo(string _titulo);
 void setTemporada(int _temporada);
-void setCalificacion(double _calificacion);
+void setCalificacion(int _calificacion);
 
 // Metodos de acceso - getters
 string getTitulo();
 int getTemporada();
-double getCalificacion();
+int getCalificacion();
 
 // Otros métodos
 string str();
