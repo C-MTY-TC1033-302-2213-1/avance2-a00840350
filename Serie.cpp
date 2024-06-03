@@ -91,10 +91,10 @@ void Serie::agregaEpisodio(Episodio episodio){
     }
 }
 
-void Serie::calculaDuracion(){
+int Serie::calculaDuracion(){
     int acum1 = 0;
 for(int index = 0; index < cantidad; index++){
     acum1 += episodios[index].getTemporada();
 }
-cout << "Duracion = " <<acum1 << endl;
+return acum1;
 }

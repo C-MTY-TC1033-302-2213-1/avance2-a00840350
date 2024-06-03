@@ -64,6 +64,7 @@ void Polimorfismo::leerArchivo(string _nombre){
     int cantidadSeries = 0;
     int iR = 0, index;
     double promedio;
+    int duracion;
 
     entrada.open(_nombre, ios::in);  // Abrir archivo de entrada
 
@@ -108,7 +109,8 @@ void Polimorfismo::leerArchivo(string _nombre){
         promedio = arrPtrSeries[index]->calculaPromedio(); // calcula la calificacion de la Serie
         arrPtrSeries[index]->setCalificacion(promedio); // cambia la calificacion de la Serie
         // añade el calcular la duración de la serie
-        cout << arrPtrSeries[index]->getDuracion() << endl;
+        duracion = arrPtrSeries[index]->calculaDuracion();
+        arrPtrSeries[index]->setDuracion(duracion);
         arrPtrVideos[cantidad++] = arrPtrSeries[index];
     }
 

@@ -45,7 +45,7 @@ string str();
 
 void agregaEpisodio(Episodio episodio);
 
-void calculaDuracion();
+int calculaDuracion();
 };
 
 #endif /* Serie_h */
